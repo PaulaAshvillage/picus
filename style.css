@@ -63,14 +63,15 @@ html {
   font-size: 24px;
 }
 /*HEADER*/
+
 header {
-  background-color: var(--color-blue);
-}
-.header-navigation {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  background-color: var(--color-blue);
+  position: sticky;
+  top: 0;
 }
+
 a {
   padding-block: 1rem;
   text-decoration: none;
@@ -80,11 +81,18 @@ a:hover {
   color: var(--color--light);
 }
 /*Main*/
-section {
-  border-top: 1px var(--color-blue) solid;
+
+#live {
+  color: var(--color-light);
 }
 #videos {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/*Footer*/
+
+.icon {
+  color: var(--color-blue);
+  font-size: 2rem;
 }
