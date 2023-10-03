@@ -60,39 +60,112 @@ h6 {
 html {
   background-color: var(--color-dark);
   font-family: veteran typewriter;
-  font-size: 24px;
+  font-size: 26px;
+  width: 100vw;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--color-light);
+}
+h2 {
+  color: var(--color-light);
+  font-size: 2rem;
+}
+section {
+  padding-top: 4rem;
 }
 /*HEADER*/
-
-header {
+.navbar {
   display: flex;
-  justify-content: space-around;
-  background-color: var(--color-blue);
-  position: sticky;
-  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item {
+  margin-left: 2rem;
+}
+.nav-link {
+  font-size: 1.5rem;
+
+  color: var(--color-blue);
 }
 
-a {
-  padding-block: 1rem;
-  text-decoration: none;
-  color: var(--color-dark-gray);
+.nav-link:hover {
+  color: orange;
 }
-a:hover {
-  color: var(--color--light);
-}
+
 /*Main*/
 
+#center {
+  padding-block: 400px;
+
+  background-image: url(/img/MainPicStart.jpeg);
+  background-color: var(--color-gray);
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-position: center;
+
+  background-blend-mode: luminosity;
+}
+
+.main {
+  padding-inline: 2rem;
+}
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 #live {
   color: var(--color-light);
 }
-#videos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.bio-article {
+  color: var(--color-light);
 }
 /*Footer*/
 
 .icon {
   color: var(--color-blue);
   font-size: 2rem;
+}
+
+/*Responsive*/
+@media screen and (min-width: 1200px) {
+  #center {
+    padding-block: 500px;
+    background-image: url(/img/main-pic-resized-large.jpeg);
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-position: center;
+
+    background-blend-mode: luminosity;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  #center {
+    padding-block: 0;
+    background-image: url(/img/main-pic-resized-small.jpeg);
+    background-color: orange;
+    background-blend-mode: luminosity;
+  }
 }
