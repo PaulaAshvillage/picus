@@ -5,29 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Kapt'N Picus</title>
 </head>
 
 <body>
-    <header>
-        <div class="outer-container">
+    <header class="header">
 
-            <nav class="navbar">
-                <h1>Käpt'N Picus</h1>
+        <h1>Käpt'N Picus</h1>
+        <label for="" class="icons"><i class='bx bx-menu'></i></label>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"> <a class="nav-link" href="#live">Live</a></li>
+                <li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#videos">Videos</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#merch">Merch</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#bio">Bio</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </nav>
 
-                <ul class="nav-menu">
-                    <li class="nav-item"> <a class="nav-link" href="#live">Live</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#videos">Videos</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#merch">Merch</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="#bio">Bio</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                </div>
-            </nav>
-        </div>
     </header>
     <main>
 
@@ -39,10 +39,25 @@
 
         </div>
 
-        <section id=" live">
+        <section id="live">
             <h2>Live</h2>
-            <h3>upcoming shows</h3>
-
+            <h3>upcocming shows</h3>
+            <table class="upcoming-shows table">
+                <thead>
+                    <tr>
+                        <th>DATE </th>
+                        <th>LOCATION</th>
+                    </tr>
+                </thead>
+                <TBody>
+                    <tr>
+                        <td>
+                            23.10.23
+                        </td>
+                        <td> Sonic Ballroom</td>
+                    </tr>
+                </TBody>
+            </table>
             HIer stehen die Tourdaten. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos neque
             perferendis labore nesciunt itaque odit voluptatibus dignissimos doloremque, blanditiis ut placeat cum culpa
             dolorem hic minima autem alias illum aut dolores! Ab adipisci corporis, architecto debitis obcaecati fugit
@@ -52,14 +67,22 @@
             inventore dicta incidunt assumenda repudiandae? Commodi ad delectus numquam fuga sed incidunt repellendus
             dignissimos vel fugiat nihil!
             <h3>schön wars</h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, earum. Aspernatur quidem ratione eos illum
-            rem iusto? Expedita, reprehenderit. Earum praesentium nam deleniti animi repudiandae laudantium quod ullam
-            quo assumenda, eligendi recusandae ab officia id, exercitationem magni nobis eveniet repellendus consectetur
-            corporis aliquam itaque neque, cum laboriosam beatae! Pariatur, provident ullam nesciunt debitis quae hic.
-            Et repudiandae ratione fugit neque. Amet modi in, optio ipsa animi voluptates beatae quisquam. Molestias
-            beatae dignissimos tempora ab quae officia quos expedita sit doloremque odit quisquam neque exercitationem
-            nostrum suscipit commodi pariatur, aspernatur voluptatum dolorem fugit. Facilis dolorum sunt rem. Dolor
-            temporibus nostrum quam.
+            <table class="past-shows table">
+                <thead>
+                    <tr>
+                        <th>DATE </th>
+                        <th>LOCATION</th>
+                    </tr>
+                </thead>
+                <TBody>
+                    <tr>
+                        <td>
+                            23.10.23
+                        </td>
+                        <td> Sonic Ballroom</td>
+                    </tr>
+                </TBody>
+            </table>
         </section>
         <section id="music">
             <h2>music</h2><iframe id="spotify" style="border-radius:12px"
@@ -140,7 +163,10 @@
 
 
     </footer>
+
     </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

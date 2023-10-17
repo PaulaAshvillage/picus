@@ -3,5 +3,6 @@
 - [x] merch layout grid
 - [ ] contact email
 - [ ] footer with links
-- [ ] responsiveness
+- [ ] responsivenes
 - [ ] navbar header
+- [ ] table content from database
