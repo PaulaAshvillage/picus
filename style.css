@@ -78,16 +78,19 @@ h2 {
   font-size: 2rem;
 }
 section {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 /*HEADER*/
-
+.responsive-nav {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 0.5rem;
+  margin-right: -5rem;
 }
 .nav-menu {
   display: flex;
@@ -95,7 +98,7 @@ section {
   align-items: center;
 }
 .nav-item {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 .nav-link {
   font-size: 1.5rem;
@@ -111,12 +114,13 @@ section {
 
 #center {
   padding-block: 400px;
-
+  background-size: cover;
   background-image: url(/img/MainPicStart.jpeg);
   background-color: var(--color-gray);
   background-repeat: no-repeat;
-  height: 50vh;
+  /* height: 50vh; */
   background-position: center;
+  background-color: orange;
 
   background-blend-mode: luminosity;
 }
@@ -146,10 +150,15 @@ section {
 }
 
 .merch-pics {
-  padding-block: 3rem;
+  padding-block: 2rem;
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.merch-pcis > div {
+  min-height: 10vh;
+  max-height: 10vh;
+  overflow: hidden;
 }
 
 /*Footer*/
@@ -160,17 +169,8 @@ section {
 }
 
 /*Responsive*/
-@media screen and (min-width: 1200px) {
-  #center {
-    padding-block: 500px;
-    background-image: url(/img/main-pic-resized-large.jpeg);
-    background-repeat: no-repeat;
-    height: 50vh;
-    background-position: center;
-    background-blend-mode: luminosity;
-  }
-}
-@media screen and (min-width: 951px) {
+/*Mittelgroße Monitore*/
+@media screen and (min-width: 729px) {
   .merch-pics {
     padding-block: 3rem;
     display: grid;
@@ -178,19 +178,13 @@ section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
-@media screen and (min-width: 200px) and (max-width: 950px) {
-  #center {
-    padding-block: 0;
-    background-image: url(/img/main-pic-resized-small.jpeg);
-    background-color: orange;
-    background-blend-mode: luminosity;
-  }
-  .merch-pics {
-    padding-block: 3rem;
-    display: block;
-  }
-  .card {
-    padding-bottom: 2rem;
-  }
+/** Kleine Monitore: Inhalte sequentiell **/
+@media screen and (max-width: 728px) {
+}
+.merch-pics {
+  padding-block: 3rem;
+  display: block;
+}
+.card {
+  padding-bottom: 2rem;
 }
