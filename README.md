@@ -4,5 +4,5 @@
 - [ ] contact email
 - [ ] footer with links
 - [ ] responsivenes
-- [ ] navbar header
+- [x] navbar header
 - [ ] table content from database
