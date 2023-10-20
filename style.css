@@ -204,18 +204,23 @@ th {
 
   color: white;
 }
-
-.bio-article {
-  color: var(--color-light);
+.iframe-container {
+  margin-top: 2rem;
 }
-
+.videos {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
 .merch-pics {
   padding-block: 2rem;
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
+.bio-article {
+  color: var(--color-light);
+}
 /*Footer*/
 
 .icon {
@@ -289,6 +294,9 @@ th {
     gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .videos {
+    display: block;
+  }
 }
 /** Kleine Monitore: Inhalte sequentiell **/
 @media screen and (min-width: 300px) and (max-width: 728px) {
@@ -355,6 +363,9 @@ th {
     min-height: 50vh;
     max-height: 50vh;
     overflow: hidden;
+  }
+  .videos {
+    display: block;
   }
 }
 
