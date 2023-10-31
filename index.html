@@ -13,13 +13,10 @@
 <body>
     <header class="header">
 
-        <h1>Käpt'N Picus</h1>
-        <input type="checkbox" name="" id="check">
-        <label for="check" class="icons">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <i class='bx bx-x' id="close-icon"></i>
-        </label>
-        <nav class="navbar">
+        <h1 class="logo">Logo<img src="/logos/Logo-3-white.eps" alt=""></h1>
+        <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
+
+        <nav>
             <ul class="nav-menu">
                 <li class="nav-item"> <a class="nav-link" href="#live">Live</a></li>
                 <li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
@@ -27,11 +24,11 @@
                 <li class="nav-item"> <a class="nav-link" href="#merch">Merch</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#bio">Bio</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-        </nav>
 
+        </nav>
+        <label for="navbar-toggle" class="navbar-toggle-label">
+            <span>X</span>
+        </label>
     </header>
     <main>
 
@@ -44,14 +41,15 @@
         </div>
 
         <section id="live">
-            <h2>Live</h2>
+            <h2 id="headline-live">live</h2>
             <div class="tourdates-container">
-                <h3 class="tourdates">upcocming shows</h3>
+                <h3 class="tourdates">upcoming shows</h3>
                 <table class="table">
                     <thead>
                         <tr>
                             <th>DATE </th>
                             <th>LOCATION</th>
+                            <th>EVENT</th>
                         </tr>
                     </thead>
                     <TBody>
@@ -59,20 +57,73 @@
                             <td>
                                 11.02.24
                             </td>
+                            <td>
+                                Football World
+                            </td>
                             <td>Super Bowl</td>
+
                         </tr>
                         <tr>
                             <td>
-                                23.06.24
+                                11.02.24
                             </td>
-                            <td>Coachella</td>
+                            <td>
+                                Sonic Ballroom
+                            </td>
+                            <td>New Years</td>
+                        </tr>
+
+                    </TBody>
+                </table>
+                <h3 class="tourdates">past shows</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>DATE </th>
+                            <th>LOCATION</th>
+                            <th>EVENT</th>
+                        </tr>
+                    </thead>
+                    <TBody>
+                        <tr>
+                            <td>
+                                11.02.24
+                            </td>
+                            <td>
+                                Football World
+                            </td>
+                            <td>Super Bowl</td>
+
                         </tr>
                         <tr>
                             <td>
-                                23.06.24
+                                11.02.24
                             </td>
-                            <td>Coachella</td>
+                            <td>
+                                Sonic Ballroom
+                            </td>
+                            <td>New Years</td>
                         </tr>
+                        <tr>
+                            <td>
+                                11.02.24
+                            </td>
+                            <td>
+                                Football World
+                            </td>
+                            <td>Super Bowl</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                11.02.24
+                            </td>
+                            <td>
+                                Sonic Ballroom
+                            </td>
+                            <td>New Years</td>
+                        </tr>
+
                     </TBody>
                 </table>
             </div>
@@ -110,6 +161,7 @@
                 <div class="card">
                     <img src="img/MerchPics/shirt-blue.png"
                         alt="Käpt’N Picus Shirt in blau mit Spruch Ich will hier raus">
+                    <p> unisex L/M/S</p>
                 </div>
                 <div class="card">
                     <img src="img/MerchPics/shirt-red.png"
