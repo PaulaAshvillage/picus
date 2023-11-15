@@ -96,12 +96,6 @@ section {
 
 /*HEADER*/
 
-.responsive-nav {
-  display: none;
-}
-#check {
-  display: none;
-}
 header {
   background-color: var(--color-dark);
   position: fixed;
@@ -116,8 +110,8 @@ header {
 nav {
   display: none;
   position: absolute;
-  text-align: right;
-  right: 0;
+  text-align: left;
+  left: 0;
   top: 100%;
   width: 100%;
   background-color: var(--color-gray-transparent);
@@ -134,8 +128,34 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:hover {
-  color: orange;
+.navbar-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navbar-toggle-label span,
+.navbar-toggle-label span::before,
+.navbar-toggle-label span::after {
+  display: block;
+  background: var(--color-light);
+  height: 2px;
+  width: 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+.navbar-toggle-label span::before,
+.navbar-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+.navbar-toggle-label span::before {
+  bottom: 7px;
+}
+.navbar-toggle-label span::after {
+  top: 7px;
 }
 #navbar-toggle {
   display: none;
@@ -289,5 +309,39 @@ th {
   }
   .videos {
     display: block;
+  }
+}
+/** Hamburger Menu to normal menu **/
+@media screen and (min-width: 800px) {
+  .navbar-toggle-label {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 2fr) 1fr;
+  }
+  .logo {
+    grid-column: 2 / 3;
+  }
+  nav {
+    all: unset;
+    padding: 0;
+    margin: 0;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li {
+    margin-left: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav a {
+    opacity: 1;
   }
 }
