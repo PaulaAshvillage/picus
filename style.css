@@ -60,7 +60,9 @@ html {
   background-color: var(--color-dark);
   font-family: veteran typewriter;
   font-size: 16px;
-  width: 100vw;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
 }
 body {
   padding-inline: 1rem;
@@ -103,6 +105,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 999;
+  max-width: 1500px;
 }
 
 nav {
@@ -113,10 +116,6 @@ nav {
   top: 100%;
   width: 100%;
   background-color: var(--color-gray-transparent);
-}
-nav li {
-  margin-bottom: 1rem;
-  margin-right: 1rem;
 }
 
 nav a {
@@ -163,17 +162,21 @@ nav a {
 }
 
 /*Main*/
-
+#merch,
+#videos,
+#live,
+#music,
+#bio {
+  padding-inline: 2rem;
+}
 #center {
   padding-block: 400px;
   background-size: cover;
   background-image: url(/img/MainPicStart.jpeg);
   background-color: var(--color-gray);
   background-repeat: no-repeat;
-
   background-position: center;
   background-color: orange;
-
   background-blend-mode: luminosity;
 }
 
@@ -208,7 +211,7 @@ nav a {
   padding-inline: 1rem;
   border-bottom: 1px dashed var(--color-gray);
 }
-table {
+.table {
   margin-block: 0.2rem;
   border-collapse: collapse;
   width: 100%;

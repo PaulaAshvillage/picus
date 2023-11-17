@@ -7,7 +7,7 @@
 - [x] second video and grid layout
 - [x] prüfung hamburger menu size der box und puffers gesicht
 - [ ] Event link einbauen
-- [ ] past shows hidden
+- [x] past shows hidden
 - [ ] Bildunterschrift
 - [x] abwechselnder Hintergrund
 - [x] header fixieren
