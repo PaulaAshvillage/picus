@@ -3,17 +3,17 @@
 - [x] merch layout grid
 - [ ] contact email
 - [ ] footer with links
-- [ ] navbar header https://www.youtube.com/watch?v=8QKOaTYvYUA&t=206s 39:22
+- [x] navbar header https://www.youtube.com/watch?v=8QKOaTYvYUA&t=206s 39:22
 - [x] second video and grid layout
-- [ ] prüfung hamburger menu size der box und puffers gesicht
+- [x] prüfung hamburger menu size der box und puffers gesicht
 - [ ] Event link einbauen
 - [ ] past shows hidden
 - [ ] Bildunterschrift
 - [x] abwechselnder Hintergrund
-- [ ] header fixieren
+- [x] header fixieren
 - [ ] logo header
 - [ ] symbole unter spotify
-- [] Bildunterschrift Shirts
+- [ ] Bildunterschrift Shirts
 
 ## nice to have
 

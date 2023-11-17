@@ -45,7 +45,7 @@ h6 {
 :root {
   --color-dark: #2a272a;
   --color-gray: rgb(75, 74, 84);
-  --color-gray-transparent: rgba(75, 74, 84, 0.9);
+  --color-gray-transparent: rgba(75, 74, 84, 0.7);
   --color-blue-gray: #677381;
   --color-blue: #82a0aa;
   --color-light: #a3cfcd;
@@ -104,9 +104,7 @@ header {
   position: fixed;
   z-index: 999;
 }
-.logo {
-  margin: 0;
-}
+
 nav {
   display: none;
   position: absolute;
@@ -123,7 +121,7 @@ nav li {
 
 nav a {
   font-size: 1rem;
-  color: var(--color-blue);
+  color: var(--color-light);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -206,8 +204,9 @@ nav a {
 .tourdates-container {
   border-collapse: collapse;
   color: var(--color-blue);
-  border: 2px var(--color-gray);
-  border-style: groove;
+  border: 2px solid var(--color-gray);
+  padding-inline: 1rem;
+  border-bottom: 1px dashed var(--color-gray);
 }
 table {
   margin-block: 0.2rem;
@@ -232,8 +231,27 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-
   color: white;
+}
+
+#table-toggle {
+  display: none;
+}
+.table-toggle-label {
+  display: flex;
+  justify-content: center;
+}
+.triangle {
+  margin-top: 0.5rem;
+  align-self: center;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--color-dark);
+}
+#table-toggle:checked ~ table {
+  display: none;
 }
 
 .iframe-container {
@@ -244,10 +262,12 @@ th {
   color: var(--color-gray);
 }
 .videos {
+  padding-inline: 2rem;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
 }
+
 .merch-pics {
   padding-block: 2rem;
   display: grid;
@@ -317,8 +337,10 @@ th {
     display: none;
   }
   header {
+    padding-block: 0.5rem;
+
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 2fr) 1fr;
+    grid-template-columns: 0.25fr auto minmax(600px, 2fr) 0.25fr;
   }
   .logo {
     grid-column: 2 / 3;
@@ -342,6 +364,10 @@ th {
     justify-content: flex-end;
   }
   nav a {
+    font-size: 1.5rem;
     opacity: 1;
+  }
+  nav a:hover {
+    color: orange;
   }
 }
