@@ -113,7 +113,7 @@ header {
 }
 #logo-img {
   padding-block: 0.5rem;
-  width: 70%;
+  width: 60%;
 }
 
 nav {
@@ -178,11 +178,12 @@ nav a {
   padding-inline: 2rem;
 }
 #center {
-  padding-block: 400px;
+  padding-block: 300px;
   background-size: cover;
   background-image: url(/img/MainPicStart.jpeg);
   background-color: var(--color-gray);
   background-repeat: no-repeat;
+
   background-position: center;
   background-color: orange;
   background-blend-mode: luminosity;
@@ -224,12 +225,14 @@ nav a {
   border-collapse: collapse;
   width: 100%;
   color: var(--color-dark);
+  table-layout: fixed;
 }
 
 td,
 th {
-  padding-block: 0.8rem;
+  padding-block: 0.75rem;
 }
+
 thead {
   display: none;
 }
@@ -323,6 +326,17 @@ th {
     color: var(--color-light);
     border-radius: 4px;
     background-color: var(--color-dark);
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  .tourdates-container {
+    padding: 0;
+  }
+  table {
+    margin: 0;
+    padding-inline: 0;
+    font-size: 0.7rem;
   }
   .merch-pics {
     padding-block: 3rem;
