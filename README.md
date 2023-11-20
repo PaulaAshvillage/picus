@@ -11,7 +11,7 @@
 - [ ] Bildunterschrift
 - [x] abwechselnder Hintergrund
 - [x] header fixieren
-- [ ] logo header
+- [x] logo header
 - [ ] symbole unter spotify
 - [ ] Bildunterschrift Shirts
 

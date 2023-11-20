@@ -107,6 +107,14 @@ header {
   z-index: 999;
   max-width: 1500px;
 }
+.header-logo {
+  display: flex;
+  justify-content: end;
+}
+#logo-img {
+  padding-block: 0.5rem;
+  width: 70%;
+}
 
 nav {
   display: none;
@@ -286,7 +294,7 @@ th {
 
 /*Responsive breakpoints*/
 /*Mittelgroße Monitore*/
-@media screen and (min-width: 729px) and (max-width: 1200px) {
+@media screen and (min-width: 816px) and (max-width: 1200px) {
   .nav-link:hover {
     color: var(--color-light);
     border-radius: 4px;
@@ -310,7 +318,7 @@ th {
   }
 }
 /** Kleine Monitore: Inhalte sequentiell **/
-@media screen and (min-width: 300px) and (max-width: 728px) {
+@media screen and (min-width: 300px) and (max-width: 815px) {
   .nav-link:hover {
     color: var(--color-light);
     border-radius: 4px;
@@ -335,7 +343,7 @@ th {
   }
 }
 /** Hamburger Menu to normal menu **/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 815px) {
   .navbar-toggle-label {
     display: none;
   }
@@ -348,6 +356,7 @@ th {
   .logo {
     grid-column: 2 / 3;
   }
+
   nav {
     all: unset;
     padding: 0;
