@@ -178,7 +178,7 @@ nav a {
   padding-inline: 2rem;
 }
 #center {
-  padding-block: 300px;
+  padding-block: 400px;
   background-size: cover;
   background-image: url(/img/MainPicStart.jpeg);
   background-color: var(--color-gray);
@@ -294,6 +294,14 @@ th {
 }
 
 /*Footer*/
+footer {
+  padding-bottom: 2rem;
+}
+.links-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 
 /*Responsive breakpoints*/
 /*Mittelgroße Monitore*/
