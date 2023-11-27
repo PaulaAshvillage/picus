@@ -168,7 +168,10 @@ nav a {
 #navbar-toggle:checked ~ nav {
   display: block;
 }
-
+.nav-link:hover {
+  color: orange;
+  border-radius: 4px;
+}
 /*Main*/
 #merch,
 #videos,
@@ -288,6 +291,28 @@ th {
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+#button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-contact {
+  background-color: var(--color-blue-gray);
+
+  padding-inline: 1rem;
+  border-radius: 1.75rem;
+  font-size: 1.2rem;
+  border: 2px solid orange;
+}
+.mail-contact:hover {
+  background-color: var(--color-light);
+  border: 2px solid var(--color-dark);
+}
+.text-contact {
+  color: var(--color-dark);
+}
+
 #bio {
   background-color: var(--color-blue-gray);
   color: var(--color-dark);
@@ -295,22 +320,18 @@ th {
 
 /*Footer*/
 footer {
-  padding-bottom: 2rem;
+  padding-block: 2rem;
 }
 .links-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
 /*Responsive breakpoints*/
 /*Mittelgroße Monitore*/
 @media screen and (min-width: 816px) and (max-width: 1200px) {
-  .nav-link:hover {
-    color: var(--color-light);
-    border-radius: 4px;
-    background-color: var(--color-dark);
-  }
   .merch-pics {
     padding-block: 3rem;
     display: block;
@@ -330,17 +351,13 @@ footer {
 }
 /** Kleine Monitore: Inhalte sequentiell **/
 @media screen and (min-width: 300px) and (max-width: 815px) {
-  .nav-link:hover {
-    color: var(--color-light);
-    border-radius: 4px;
-    background-color: var(--color-dark);
+  #center {
+    padding-block: 300px;
   }
   h3 {
     font-size: 0.9rem;
   }
-  .tourdates-container {
-    padding: 0;
-  }
+
   table {
     margin: 0;
     padding-inline: 0;
@@ -371,7 +388,6 @@ footer {
   }
   header {
     padding-block: 0.5rem;
-
     display: grid;
     grid-template-columns: 0.25fr auto minmax(600px, 2fr) 0.25fr;
   }
