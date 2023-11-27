@@ -360,16 +360,20 @@ footer {
 
   table {
     margin: 0;
-    padding-inline: 0;
+
     font-size: 0.7rem;
   }
+
   .merch-pics {
-    padding-block: 3rem;
-    display: block;
+    padding-inline: 0;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
   }
 
   .card {
-    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .merch-pics > div {
@@ -377,8 +381,15 @@ footer {
     max-height: 50vh;
     overflow: hidden;
   }
+  .mail-contact {
+    font-size: 1rem;
+    padding-inline: 0.5rem;
+  }
   .videos {
     display: block;
+  }
+  .links-list {
+    gap: 0.5rem;
   }
 }
 /** Hamburger Menu to normal menu **/
