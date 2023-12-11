@@ -291,6 +291,9 @@ th {
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.merch-text {
+  color: var(--color-blue-gray);
+}
 #button-container {
   display: flex;
   align-items: center;
@@ -298,7 +301,7 @@ th {
 }
 
 .mail-contact {
-  background-color: var(--color-blue-gray);
+  background-color: var(--color-blue);
 
   padding-inline: 1rem;
   border-radius: 1.75rem;
@@ -400,7 +403,7 @@ footer {
   header {
     padding-block: 0.5rem;
     display: grid;
-    grid-template-columns: 0.25fr auto minmax(600px, 2fr) 0.25fr;
+    grid-template-columns: 0.25fr auto minmax(600px, 2fr) 0.1fr;
   }
   .logo {
     grid-column: 2 / 3;
