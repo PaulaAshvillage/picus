@@ -60,12 +60,11 @@ html {
   background-color: var(--color-dark);
   font-family: veteran typewriter;
   font-size: 16px;
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
 }
 body {
-  padding-inline: 1rem;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 
 li {
@@ -100,78 +99,26 @@ section {
 
 header {
   background-color: var(--color-dark);
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  max-width: 1500px;
-}
-.header-logo {
-  display: flex;
-  justify-content: end;
-}
-#logo-img {
   padding-block: 0.5rem;
-  width: 60%;
 }
-
 nav {
-  display: none;
-  position: absolute;
-  text-align: left;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  background-color: var(--color-gray-transparent);
+  display: flex;
+  justify-content: space-between;
 }
 
-nav a {
-  font-size: 1rem;
-  color: var(--color-light);
-  text-decoration: none;
-  text-transform: uppercase;
+.img-container {
+  display: flex;
 }
-
-.navbar-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.nav-container {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
-.navbar-toggle-label span,
-.navbar-toggle-label span::before,
-.navbar-toggle-label span::after {
-  display: block;
-  background: var(--color-light);
-  height: 2px;
-  width: 2rem;
-  border-radius: 2px;
-  position: relative;
+.nav-link {
+  font-size: 2rem;
+  color: var(--color-light);
 }
-.navbar-toggle-label span::before,
-.navbar-toggle-label span::after {
-  content: "";
-  position: absolute;
-}
-.navbar-toggle-label span::before {
-  bottom: 7px;
-}
-.navbar-toggle-label span::after {
-  top: 7px;
-}
-#navbar-toggle {
-  display: none;
-}
-#navbar-toggle:checked ~ nav {
-  display: block;
-}
-.nav-link:hover {
-  color: orange;
-  border-radius: 4px;
-}
+
 /*Main*/
 #merch,
 #videos,
@@ -353,7 +300,14 @@ footer {
   }
 }
 /** Kleine Monitore: Inhalte sequentiell **/
-@media screen and (min-width: 300px) and (max-width: 815px) {
+@media screen and (min-width: 300px) and (max-width: 724px) {
+  .nav-container {
+    display: none;
+  }
+  .logo {
+    width: 90%;
+    height: 90%;
+  }
   #center {
     padding-block: 300px;
   }
@@ -392,45 +346,5 @@ footer {
   }
   .links-list {
     gap: 0.5rem;
-  }
-}
-/** Hamburger Menu to normal menu **/
-@media screen and (min-width: 815px) {
-  .navbar-toggle-label {
-    display: none;
-  }
-  header {
-    padding-block: 0.5rem;
-    display: grid;
-    grid-template-columns: 0.25fr auto minmax(600px, 2fr) 0.1fr;
-  }
-  .logo {
-    grid-column: 2 / 3;
-  }
-
-  nav {
-    all: unset;
-    padding: 0;
-    margin: 0;
-    grid-column: 3/4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  nav li {
-    margin-left: 2rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-  nav a {
-    font-size: 1.5rem;
-    opacity: 1;
-  }
-  nav a:hover {
-    color: orange;
   }
 }
