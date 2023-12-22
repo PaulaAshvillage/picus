@@ -125,7 +125,6 @@ nav {
 #live,
 #music,
 #bio {
-  padding-inline: 2rem;
 }
 #center {
   padding-block: 400px;
@@ -156,25 +155,29 @@ nav {
   height: 100%;
 }
 #live {
-  background-color: var(--color-blue-gray);
   color: var(--color-gray);
 }
 .tourdates {
-  color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 2rem;
+  text-align: left;
 }
 
 .tourdates-container {
   border-collapse: collapse;
-  color: var(--color-blue);
-  border: 2px solid var(--color-gray);
+  font-size: 1.5rem;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: 2px solid var(--color-dark);
   padding-inline: 1rem;
-  border-bottom: 1px dashed var(--color-gray);
+  border-bottom: 1px dashed var(--color-light);
 }
 .table {
   margin-block: 0.2rem;
   border-collapse: collapse;
   width: 100%;
-  color: var(--color-dark);
+
+  color: var(--color-light);
   table-layout: fixed;
 }
 
@@ -188,12 +191,12 @@ thead {
 }
 
 tr:hover {
-  background-color: var(--color-light);
+  color: orange;
 }
 
 th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   text-align: left;
   color: white;
 }
@@ -212,7 +215,7 @@ th {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid var(--color-dark);
+  border-top: 10px solid var(--color-light);
 }
 #table-toggle:checked ~ table {
   display: none;
@@ -221,10 +224,7 @@ th {
 .iframe-container {
   margin-top: 2rem;
 }
-#videos {
-  background-color: var(--color-blue-gray);
-  color: var(--color-gray);
-}
+
 .videos {
   padding-inline: 2rem;
   display: grid;
@@ -239,7 +239,8 @@ th {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .merch-text {
-  color: var(--color-blue-gray);
+  font-size: 1.25rem;
+  color: var(--color-light);
 }
 #button-container {
   display: flex;
@@ -264,8 +265,8 @@ th {
 }
 
 #bio {
-  background-color: var(--color-blue-gray);
-  color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 1.25rem;
 }
 
 /*Footer*/
