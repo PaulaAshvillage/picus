@@ -52,13 +52,13 @@ h6 {
   --font: "veteran typewrite", sans-serif;
 }
 @font-face {
-  font-family: veteran typewriter;
   src: url(fonts/veteran\ typewriter.ttf);
+  font-family: veteran typewriter;
 }
 
 html {
   background-color: var(--color-dark);
-  font-family: veteran typewriter;
+  font-family: veteran typewriter, arial, sans-serif;
   font-size: 16px;
 }
 body {
@@ -86,7 +86,6 @@ h2 {
   margin-bottom: 2rem;
 }
 h3 {
-  font-size: 1.5rem;
   color: var(--color-blue);
   padding-top: 0.5rem;
   text-align: center;
@@ -159,7 +158,8 @@ nav {
 }
 .tourdates {
   color: var(--color-light);
-  font-size: 2rem;
+  font-size: 1.75rem;
+  text-decoration: underline;
   text-align: left;
 }
 
@@ -312,13 +312,14 @@ footer {
   #center {
     padding-block: 300px;
   }
-  h3 {
-    font-size: 0.9rem;
+
+  .tourdates {
+    font-size: 1.2rem;
+    text-decoration: underline;
   }
   table {
     margin: 0;
-
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .merch-pics {
