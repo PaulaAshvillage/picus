@@ -170,7 +170,6 @@ nav {
   background-color: var(--color-dark);
   border: 2px solid var(--color-dark);
   padding-inline: 1rem;
-  border-bottom: 1px dashed var(--color-light);
 }
 .table {
   margin-block: 0.2rem;
@@ -180,9 +179,7 @@ nav {
   color: var(--color-light);
   table-layout: fixed;
 }
-.table-hidden {
-  display: none;
-}
+
 td,
 th {
   padding-block: 0.75rem;
@@ -202,9 +199,21 @@ th {
   text-align: left;
   color: white;
 }
-#past-shows-table-hidden {
-  background-color: green;
+
+.table-hidden {
   display: none;
+}
+.btn-hidden {
+  display: none;
+}
+
+#past-shows {
+  border-radius: 8px;
+  margin: 0 auto;
+  background-color: var(--color-dark);
+  border: solid 1px var(--color-light);
+  color: var(--color-light);
+  width: 100%;
 }
 .iframe-container {
   margin-top: 2rem;
@@ -235,10 +244,10 @@ th {
 
 .mail-contact {
   background-color: var(--color-blue);
-
+  padding-block: 0.5rem;
   padding-inline: 1rem;
   border-radius: 1.75rem;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   border: 2px solid orange;
 }
 .mail-contact:hover {
@@ -276,9 +285,9 @@ footer {
   /* Grid Merch pics */
 
   .merch-pics {
-    padding-block: 3rem;
+    padding-block: 1rem;
     display: grid;
-    gap: 3rem;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .videos {
@@ -309,7 +318,7 @@ footer {
 
   .merch-pics {
     padding-inline: 0;
-    gap: 0.5rem;
+    gap: 0rem;
     grid-template-columns: 1fr;
   }
 
