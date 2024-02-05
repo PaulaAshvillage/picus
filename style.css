@@ -180,7 +180,9 @@ nav {
   color: var(--color-light);
   table-layout: fixed;
 }
-
+.table-hidden {
+  display: none;
+}
 td,
 th {
   padding-block: 0.75rem;
@@ -200,27 +202,10 @@ th {
   text-align: left;
   color: white;
 }
-
-#table-toggle {
+#past-shows-table-hidden {
+  background-color: green;
   display: none;
 }
-.table-toggle-label {
-  display: flex;
-  justify-content: center;
-}
-.triangle {
-  margin-top: 0.5rem;
-  align-self: center;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid var(--color-light);
-}
-#table-toggle:checked ~ table {
-  display: none;
-}
-
 .iframe-container {
   margin-top: 2rem;
 }
