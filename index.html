@@ -22,7 +22,7 @@
                 <li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#videos">Videos</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#merch">Merch</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#bio">Bio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#info">Info</a></li>
             </ul>
 
         </nav>
@@ -31,17 +31,34 @@
     </header>
 
     <main>
-
         <div class="hero-container">
-
             <div class="hero" id="center">
-
             </div>
-
         </div>
-
+        <div class="follow-container-top">
+            <h2>Follow us </h2>
+            <i class="fa-brands fa-square-facebook"></i>
+            <ul class="links-list">
+                <li><a class="social-media-img" href="https://www.facebook.com/kaeptnpicus/" target="_blank"><img
+                            src="./img/socialMedia/facebook-icon.png" alt="Logo Facebook"></a></li>
+                <li><a class="social-media-img" href="https://www.instagram.com/kaeptnpicus" target="_blank"><img
+                            src="./img/socialMedia/instagram-icon.png" alt="Logo Instagram"></a></li>
+                <li><a href="https://www.youtube.com/@kaptnpicus4838" target="_blank"><img
+                            src="./img/socialMedia/youtube-icon.png" alt="Logo Youtube"></a></li>
+                <li><a href="https://open.spotify.com/intl-de/artist/1vmwSPLlspPhfr6E5nWtBv?si=baL3FkHARs6KikV_xFN4Rg"
+                        target="_blank"><img src="./img/socialMedia/spotify-icon.png" alt="Logo Spotify"></a>
+                </li>
+                <li>
+                    <div id="booking-container">
+                        <button class="mail-contact"><a class="text-contact" href="mailto:paulasperlich@gmx.de">Schreib
+                                uns!
+                            </a></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <section id="live">
-            <h2 id="headline-live">live</h2>
+            <h2 id="headline-live">Live</h2>
             <div class="tourdates-container">
                 <h3 class="tourdates">upcoming shows</h3>
                 <table class="table">
@@ -61,7 +78,6 @@
                                 Football World
                             </td>
                             <td>Super Bowl</td>
-
                         </tr>
                         <tr>
                             <td>
@@ -75,12 +91,11 @@
 
                     </TBody>
                 </table>
-                <h3 class="tourdates">past shows</h3>
-
-
-                <button id="past-shows">click here</button>
-
-                <table class="table-hidden" id="past-shows-table">
+                <div class="past-shows-wrapper">
+                    <h3 class="tourdates">past shows</h3>
+                    <button id="past-shows">show all</button>
+                </div>
+                <table class="table-hidden table" id="past-shows-table">
 
                     <thead>
                         <tr>
@@ -183,14 +198,14 @@
 
         </section>
         <section id="music">
-            <h2>music</h2><iframe title="Spotify audio player" id="spotify" style="border-radius:12px"
+            <h2>Music</h2><iframe title="Spotify audio player" id="spotify" style="border-radius:12px"
                 src="https://open.spotify.com/embed/artist/1vmwSPLlspPhfr6E5nWtBv?utm_source=generator" width="100%"
                 height="352" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
         </section>
         <section id="videos">
-            <h2>videos</h2>
+            <h2>Videos</h2>
             <div class="videos">
 
 
@@ -201,15 +216,15 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="iframe-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lsmeJl3IXDk?si=I9e32xWq8q0FRL6k"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V5kDyTqi0BA?si=noQqohdM2eS4_1v2"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
         <section id="merch">
-            <h2>merch</h2>
+            <h2>Merch</h2>
             <article class="merch-text">
                 In unseren Songs prangern wir Überkonsum an und fordern die Rettung der Welt - um dann
                 Bangladesch Shirts
@@ -269,9 +284,9 @@
                     </a></button>
             </div>
         </section>
-        <section id="bio">
-            <h2>bio</h2>
-            <article class="bio-article">
+        <section id="info">
+            <h2>Info</h2>
+            <article class="info-article">
                 <p>Warst Du auch schon mal genervt? Von Deinem Nachbarn? Deinem Chef? Oder von
                     Menschen im
                     Allgemeinen? Ihrer Spießigkeit, Egozentrik und Unreflektiertheit? Die Jungs von Käpt’N Picus
@@ -293,7 +308,6 @@
     </main>
     <footer>
         <h2>Follow us </h2>
-
         <i class="fa-brands fa-square-facebook"></i>
         <ul class="links-list">
             <li><a class="social-media-img" href="https://www.facebook.com/kaeptnpicus/" target="_blank"><img
@@ -312,14 +326,9 @@
                         </a></button>
                 </div>
             </li>
-
         </ul>
-
-
     </footer>
-
     </div>
-
     <script src="script.js"></script>
 </body>
 

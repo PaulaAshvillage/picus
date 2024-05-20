@@ -124,7 +124,7 @@ nav {
 #videos,
 #live,
 #music,
-#bio {
+#info {
 }
 #center {
   padding-block: 400px;
@@ -132,12 +132,13 @@ nav {
   background-image: url(/img/MainPicStart.jpeg);
   background-color: var(--color-gray);
   background-repeat: no-repeat;
-
   background-position: center;
   background-color: orange;
   background-blend-mode: luminosity;
 }
-
+.follow-container-top {
+  margin-top: 2rem;
+}
 .main {
   padding-inline: 2rem;
 }
@@ -158,9 +159,9 @@ nav {
   color: var(--color-gray);
 }
 .tourdates {
-  color: var(--color-light);
+  color: orange;
   font-size: 1.75rem;
-  text-decoration: underline;
+  text-decoration: none;
   text-align: left;
 }
 
@@ -209,11 +210,18 @@ th {
 
 #past-shows {
   border-radius: 8px;
-  margin: 0 auto;
   background-color: var(--color-dark);
   border: solid 1px var(--color-light);
   color: var(--color-light);
-  width: 100%;
+  align-self: center;
+}
+#past-shows:hover {
+  color: orange;
+  border: solid 1px orange;
+}
+.past-shows-wrapper {
+  display: flex;
+  gap: 2rem;
 }
 .iframe-container {
   margin-top: 2rem;
@@ -258,7 +266,7 @@ th {
   color: var(--color-dark);
 }
 
-#bio {
+#info {
   color: var(--color-light);
   font-size: 1.25rem;
 }
@@ -318,7 +326,7 @@ footer {
 
   .merch-pics {
     padding-inline: 0;
-    gap: 0rem;
+    gap: 0.5rem;
     grid-template-columns: 1fr;
   }
 
