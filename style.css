@@ -352,3 +352,13 @@ footer {
     gap: 0.5rem;
   }
 }
+.link-container > a {
+  color: var(--color-blue-gray);
+  font-size: 1rem;
+}
+.datenschutz {
+  color: var(--color-light);
+}
+.impressum {
+  color: var(--color-light);
+}
